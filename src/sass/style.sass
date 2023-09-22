@@ -6,7 +6,6 @@
 @import 'base/keyframes'
 @import 'blocks/header'
 @import 'blocks/main'
-@import 'blocks/footer'
 
 body
     margin: 0
@@ -70,9 +69,13 @@ li
 
 a
     text-decoration: none
+    color: inherit
+
+.wrapper
+    min-height: 100%
 
 .container
-    max-width: 1110px
+    max-width: 1360px
     margin: 0 auto
     padding: 0 20px
     @media(max-width: 576px)
