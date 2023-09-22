@@ -38,7 +38,7 @@ const html = function () {
 
 const scripts = function () {
     return gulp.src([
-        'node_modules/swiper/swiper-bundle.min.js',
+        // 'node_modules/swiper/swiper-bundle.min.js',
         'src/js/**/*.js'
     ])
         .pipe(concat('main.min.js'))

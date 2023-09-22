@@ -8,17 +8,15 @@
 @import 'blocks/main'
 @import 'blocks/footer'
 
-
-
-
-body 
+body
     margin: 0
     display: flex
     flex-direction: column
-    // background: $dark-color
-    // font-family: $lato
-    // color: $main-color
+    background: $dark-color
+    font-family: $raleway, sans-serif
+    color: $text-color
     font-size: 16px
+    line-height: 150%
     width: 100%
     height: 100%
     margin: 0
@@ -26,23 +24,19 @@ body
     min-height: 100vh
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
-    &.locked 
+    &.locked
         overflow: hidden
-    @include sm 
-        font-size: 16px
-    
+    @include xs
+        font-size: 11px
 
-
-* 
+*
     box-sizing: border-box
     margin: 0
 
-
-html 
+html
     scroll-behavior: smooth
 
-
-header 
+header
     padding: 0
 
 button
@@ -50,12 +44,12 @@ button
     background-color: transparent
     border: none
 
-h1, h2, h3, h4 
+h1, h2, h3, h4
     margin: 0
     font-weight: normal
 
 img
-    width: auto 
+    width: auto
     max-width: 100%
     height: auto
 
@@ -76,38 +70,21 @@ li
 
 a
     text-decoration: none
-    
-.container 
+
+.container
     max-width: 1110px
     margin: 0 auto
     padding: 0 20px
-    @media(max-width: 576px) 
+    @media(max-width: 576px)
         padding: 0 16px
 
-   
 .section-title
-    // font-family: $haus
-    font-size: 75px
-    line-height: 120%
-    // @include md
-    //     font-size: 75px
-    //     line-height: 110%
-    // @include sm
-    //     font-size: 60px
-    // @include xs
-    //     font-size: 45px
-    // @include xxs
-    //     font-size: 28px
-    
-
-
-
-
-
-
-
-
-
-
-
-
+    font-family: $raleway-semi
+    font-size: 65px
+    line-height: 135.3%
+    @include sm
+        font-size: 60px
+    @include xs
+        font-size: 45px
+    @include xxs
+        font-size: 25px
