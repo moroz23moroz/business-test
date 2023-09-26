@@ -71,9 +71,11 @@ li
 a
     text-decoration: none
     color: inherit
+    cursor: pointer
 
 .wrapper
     min-height: 100%
+    overflow: hidden
 
 .container
     max-width: 1360px
@@ -84,18 +86,18 @@ a
 .header
     &__phone
         position: relative
-        display: block
     &__phone:before
         position: absolute
         content: ''
         width: 41px
         height: 41px
         left: 0
-        transform: translateY(-10px)
         background-image: url(../img/phone.svg)
         background-repeat: no-repeat
         background-size: cover
         z-index: 100
+        @include sm
+            display: none
 
 .section-title
     width: 735px
@@ -118,6 +120,9 @@ a
     background-size: cover
     background-repeat: no-repeat
     background-position: top center
+    @include md
+        background-size: content
+
     &__btn
         position: relative
     &__btn::after
@@ -134,4 +139,3 @@ a
         border-left-color: $main-color
         cursor: pointer
         z-index: 100
-
